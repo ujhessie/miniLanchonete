@@ -1,0 +1,53 @@
+@import url('global.css');
+
+header {
+    height: 90px;
+    width: 100vw;
+    box-sizing: border-box;
+    box-shadow: 0 .5px 10px rgba(0, 0, 0, 0.123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    font-weight: 700;
+    text-align: left;
+    color: var(--color_font_black_primary);
+}
+
+
+
+/* === DIV_PRODUTOS === */
+.div-produtos {
+    width: 100%;
+}
+.div-produto {
+    width: 330px;
+    margin: 10px auto;
+} .div-produto:hover  .nome-produto {
+    color: var(--color_destaque);
+}
+.img-produto {
+    width: 100%;
+    aspect-ratio: 1/1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    cursor: pointer;
+} 
+.nome-produto {
+    margin: 0;
+    text-align: start;
+    transition: 200ms;
+}
+
+.valor-produto {
+    margin: 0;
+    text-align: start;
+}
+ .desc-produto {
+    text-align: start;
+ }
+/* === DIV_PRODUTOS === */
