@@ -16,10 +16,14 @@ function renderizarProdutos(id, nome, valor, desc) {
     const divProduto = document.createElement('div')
     divProduto.setAttribute('class', 'div-produto')
 
+    // Criando elemento 'div-img-produto'
+    const divImgProduto = document.createElement('div')
+    divImgProduto.setAttribute('class', 'div-img-produto')
+
     // criando o elemnto 'img-produto'
     const imgProduto = document.createElement('img')
     imgProduto.setAttribute('class', 'img-produto')
-    imgProduto.setAttribute('src', `../img/produtos/${id}.png`)
+    imgProduto.setAttribute('src', `img/produtos/${id}.png`)
 
     // criando o elemento 'nome-produto'
     const nomeProduto = document.createElement('h3')
@@ -39,7 +43,8 @@ function renderizarProdutos(id, nome, valor, desc) {
 
 
     // Adicionando filhos aos pais
-    divProduto.appendChild(imgProduto)
+    divImgProduto.appendChild(imgProduto)
+    divProduto.appendChild(divImgProduto)
     divProduto.appendChild(nomeProduto)
     divProduto.appendChild(valorProduto)
     divProduto.appendChild(descProduto)
