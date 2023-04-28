@@ -15,7 +15,8 @@
     background-color: var(--color_destaque);
     border-radius: 20px;
     color: var(--color_font_white);
-    min-width: 350px;
+    width: 80vw;
+    max-width: 400px;
 } #btn-carrinho:hover {
     background-color: var(--color_destaque_hover);
 }
