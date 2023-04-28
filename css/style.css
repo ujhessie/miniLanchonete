@@ -3,10 +3,11 @@
 
 /* === HEADER === */
 header {
-    height: 90px;
-    width: 100vw;
+    height: 70px;
+    width: 100%;
+    padding: 50px 0;
     box-sizing: border-box;
-    box-shadow: 0 .5px 10px rgba(0, 0, 0, 0.123);
+    /* box-shadow: 0 .5px 10px rgba(0, 0, 0, 0.123); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +17,7 @@ header {
     display: block;
     font-weight: 700;
     text-align: left;
-    color: var(--color_font_black_primary);
+    color: var(--color_font_white);
     font-size: 1.5rem;
 }
 /* === HEADER === */
@@ -26,12 +27,25 @@ header {
 
 
 /* === SEC_INICIO === */
+#inicio {
+    padding-top: 0px;
+    background-image: url('../img/bg-inicio.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 100vw 100vh 100px rgba(0, 0, 0, 0.507);
+    border-radius: 0 0 30px 30px;
+}
 .div-content-sec {
     max-width: 1100px;
     margin: 0 auto;
 }
 #h1-header {
     text-transform: uppercase;
+    color: var(--color_font_white);
+}
+#inicio p, #inicio h2{
+    color: var(--color_font_white);
 }
 #div-btns-inicio {
     margin: 30px 0;
@@ -52,7 +66,31 @@ header {
 .skills h2, .skills p {
     margin: 0;
 }
+#inicio button {
+    color: var(--color_font_white);
+}
 /* === SEC_INICIO === */
+
+
+
+
+
+/* === SEC_PRODUTOS === */
+.nav-categorias {
+    display: flex;
+    justify-content: left;
+    overflow-x: scroll;
+}
+.item-nav-categorias {
+    display: block;
+    background-color: #bbb;
+    width: 200px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px 20px;
+
+}
+/* === SEC_PRODUTOS === */
 
 
 
@@ -60,17 +98,18 @@ header {
 
 /* === DIV_PRODUTOS === */
 .div-produtos {
+    display: flex;
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 15px;
+    justify-content: space-between;
+    gap: 20px;
 }
 .div-produto {
-    width: 330px;
-    margin: 10px auto;
+    width: 320px;
+    margin: 0 auto;
 } .div-produto:hover  .nome-produto {
     color: var(--color_destaque);
 }
