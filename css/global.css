@@ -77,6 +77,7 @@ button {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
     transition: 400ms;
     margin: 10px 20px;
+    cursor: pointer;
 }button:hover {
     background-color: var(--color_destaque);
     color: var(--color_font_white);
