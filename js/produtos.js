@@ -4,6 +4,10 @@ const produtos = [
     {id: 2, nome: 'Macarronada', valor: 30.00, desc: 'Uma macarronada completa e cheia de sabor'},
     {id: 3, nome: 'Cachorro-Quente', valor: 10.00, desc: 'Sim. Um cachorro quenete. Maravilhoso. Não?'},
     {id: 4, nome: 'Mistos Diversos', valor: 5.00, desc: 'Aqui eu fiquei com preguiça de arrumar'},
+    {id: 4, nome: 'Mistos Diversos', valor: 5.00, desc: 'Aqui eu fiquei com preguiça de arrumar'},
+    {id: 4, nome: 'Mistos Diversos', valor: 5.00, desc: 'Aqui eu fiquei com preguiça de arrumar'},
+    {id: 4, nome: 'Mistos Diversos', valor: 5.00, desc: 'Aqui eu fiquei com preguiça de arrumar'},
+    {id: 4, nome: 'Mistos Diversos', valor: 5.00, desc: 'Aqui eu fiquei com preguiça de arrumar'}
 ]
 
 

@@ -137,7 +137,7 @@ header {
     gap: 20px;
 }
 .div-produto {
-    width: 300px;
+    width: 250px;
     margin: 0 auto;
 } .div-produto:hover  .nome-produto {
     color: var(--color_destaque);
