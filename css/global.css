@@ -11,6 +11,12 @@
     list-style: none;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root {
     --color_bg_page: #FDFDFD;
     --color_destaque: #ff5634;

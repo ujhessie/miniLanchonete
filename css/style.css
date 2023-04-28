@@ -17,8 +17,14 @@
     color: var(--color_font_white);
     width: 80vw;
     max-width: 400px;
+    position: relative; 
 } #btn-carrinho:hover {
     background-color: var(--color_destaque_hover);
+}
+.material-symbols-outlined {
+    position: absolute;
+    left: 100px;
+    scale: 1.5;
 }
 /* === CARRINHO === */
 
