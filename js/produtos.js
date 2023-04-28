@@ -19,7 +19,7 @@ function renderizarProdutos(id, nome, valor, desc) {
     // criando o elemnto 'img-produto'
     const imgProduto = document.createElement('img')
     imgProduto.setAttribute('class', 'img-produto')
-    imgProduto.setAttribute('src', `../../img/produtos/${id}.png`)
+    imgProduto.setAttribute('src', `../img/produtos/${id}.png`)
 
     // criando o elemento 'nome-produto'
     const nomeProduto = document.createElement('h3')
