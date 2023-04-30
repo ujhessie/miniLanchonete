@@ -1,5 +1,21 @@
 @media (max-width: 700px) {
 
+/* === CARRINHO === */
+#btn-carrinho {
+    color: transparent;
+    width: 200px;
+}
+.material-symbols-outlined {
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* === CARRINHO === */
+
+
+
+
+
 /* === GLOBAL === */
 section {
     padding: 100px 20px;
@@ -14,6 +30,8 @@ button {
 
 
 
+
+/* === SEC_PRODUTOS === */
 
 /* === SEC_PRODUTOS === */
 

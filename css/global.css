@@ -41,22 +41,26 @@ h1 {
     font-weight: 700;
     margin-top: 24px;
     margin-bottom: 10px;
+    line-height: 3rem;
 }
 
 h2 {
     font-size: 32px;
     margin-bottom: 12px;
+    line-height: 2rem;
 }
 
 h3 {
     font-size: 22px;
     margin-bottom: 16px;
+    line-height: 2rem;
 }
 
 h4 {
     font-size: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     font-weight: 500;
+    line-height: 1.2rem;
 }
 
 p, a {
@@ -64,6 +68,7 @@ p, a {
     font-weight: 400;
     margin-bottom: 10px;
     color: var(--color_black_secundary);
+    line-height: 1.2rem;
 }
 
 .span_destaque {
