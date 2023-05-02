@@ -28,10 +28,17 @@ html {
 
 
 body {
-    background-color: var(--color_bg_page);
+    background-color: #fafafa;
     color: var(--color_font_black_primary);
 }
-
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 400ms;
+}
 section {
     padding: 100px 70px;
 }
@@ -80,7 +87,7 @@ p, a {
 
 button {
     padding: 20px 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
     width: 220px;

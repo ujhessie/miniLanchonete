@@ -8,28 +8,24 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="js/script.js" defer></script>
+    <script src="js/carrinho.js" defer></script>
     <script src="js/produtos.js" defer></script>
+    <script src="js/animacoes.js" defer></script>
 
     <title>mineLanchonet</title>
 </head>
 <body>
 
 
-
-
-    <div class="div-btn-carrinho">
-        <a href="#" id="btn-carrinho">
-            <span class="material-symbols-outlined">
-                shopping_cart
-                </span>
-            Ver carrinho</a>
-    </div>
+<span id="btn-mostrar-carrinho" onclick="mostrarCarrinho()">Mostrar Carrinho</span>
+<div class="janela-carrinho">
+    <button id="btn-fechar-carrinho" onclick="fecharCarrinho()">FECHAR CARRINHO</button>
+    <div id="carrinho"></div>
+</div>
 
 
 
-
-
+<main>
     <section id="inicio">
         <header>
             <a href="#" class="logo">SUA LOGO</a>
@@ -70,11 +66,8 @@
             <h2>Aqui está alguns de nossos produtos</h2>
             <nav class="nav-categorias">
                 <a href="#hamburgueres" class="item-nav-categorias">Hamburgueres</a>
-                <a href="#hamburgueres" class="item-nav-categorias">Macarronadas</a> 
                 <a href="#bebidas" class="item-nav-categorias">Bebidas</a>
             </nav>
-
-
 
 
 
@@ -86,11 +79,11 @@
                 <div class="div-produto">
                     <div class="div-img-produto">
                         <img class="img-produto" src="img/produtos/1.png" alt="">
+                        <h4 class="valor-produto">R$ 15,00</h4>
                     </div>
                     <h3 class="nome-produto">Hamburguer tradicional</h3>
-                    <h4 class="valor-produto">R$ 15,00</h4>
                     <p class="desc-produto">O tradicional com muito sabor. Perfeito para família</p>
-                    <button class="btn-produto">+</button>
+                    <button class="btn-produto" onclick=" adicionarItem(1, 'hamburguer Tradicional', 15) ">Adicionar ao carrinho</button>
                 </div>
                 <!-- produto -->
 
@@ -98,11 +91,11 @@
                 <div class="div-produto">
                     <div class="div-img-produto">
                         <img class="img-produto" src="img/produtos/1.png" alt="">
+                        <h4 class="valor-produto">R$ 15,00</h4>
                     </div>
                     <h3 class="nome-produto">Hamburguer tradicional</h3>
-                    <h4 class="valor-produto">R$ 15,00</h4>
                     <p class="desc-produto">O tradicional com muito sabor. Perfeito para família</p>
-                    <button class="btn-produto">+</button>
+                    <button class="btn-produto" onclick=" adicionarItem(1, 'hamburguer Tradicional', 15) ">Adicionar ao carrinho</button>
                 </div>
                 <!-- produto -->
 
@@ -110,11 +103,11 @@
                 <div class="div-produto">
                     <div class="div-img-produto">
                         <img class="img-produto" src="img/produtos/1.png" alt="">
+                        <h4 class="valor-produto">R$ 15,00</h4>
                     </div>
                     <h3 class="nome-produto">Hamburguer tradicional</h3>
-                    <h4 class="valor-produto">R$ 15,00</h4>
                     <p class="desc-produto">O tradicional com muito sabor. Perfeito para família</p>
-                    <button class="btn-produto">+</button>
+                    <button class="btn-produto" onclick=" adicionarItem(1, 'hamburguer Tradicional', 15) ">Adicionar ao carrinho</button>
                 </div>
                 <!-- produto -->
 
@@ -122,107 +115,33 @@
                 <div class="div-produto">
                     <div class="div-img-produto">
                         <img class="img-produto" src="img/produtos/1.png" alt="">
+                        <h4 class="valor-produto">R$ 15,00</h4>
                     </div>
                     <h3 class="nome-produto">Hamburguer tradicional</h3>
-                    <h4 class="valor-produto">R$ 15,00</h4>
                     <p class="desc-produto">O tradicional com muito sabor. Perfeito para família</p>
-                    <button class="btn-produto">+</button>
+                    <button class="btn-produto" onclick=" adicionarItem(1, 'hamburguer Tradicional', 15) ">Adicionar ao carrinho</button>
                 </div>
                 <!-- produto -->
-
 
                 <!-- produto -->
                 <div class="div-produto">
                     <div class="div-img-produto">
                         <img class="img-produto" src="img/produtos/1.png" alt="">
+                        <h4 class="valor-produto">R$ 15,00</h4>
                     </div>
                     <h3 class="nome-produto">Hamburguer tradicional</h3>
-                    <h4 class="valor-produto">R$ 15,00</h4>
                     <p class="desc-produto">O tradicional com muito sabor. Perfeito para família</p>
-                    <button class="btn-produto">+</button>
+                    <button class="btn-produto" onclick=" adicionarItem(1, 'hamburguer Tradicional', 15) ">Adicionar ao carrinho</button>
                 </div>
                 <!-- produto -->
 
             </div>
             <!-- divprodutos -->
-
-
-
-
-
-            <!-- DivProdutos -->
-            <h3 id="bebidas">Bebidas</h3>
-            <div class="div-produtos">
-
-                <!-- produto -->
-                <div class="div-produto">
-                    <div class="div-img-produto">
-                        <img class="img-produto" src="img/produtos/coca.png" alt="">
-                    </div>
-                    <h3 class="nome-produto">Coca-cola 2L</h3>
-                    <h4 class="valor-produto">R$ 12,00</h4>
-                    <p class="desc-produto"></p>
-                    <button class="btn-produto">+</button>
-                </div>
-                <!-- produto -->
-
-                <!-- produto -->
-                <div class="div-produto">
-                    <div class="div-img-produto">
-                        <img class="img-produto" src="img/produtos/coca.png" alt="">
-                    </div>
-                    <h3 class="nome-produto">Coca-cola 2L</h3>
-                    <h4 class="valor-produto">R$ 12,00</h4>
-                    <p class="desc-produto"></p>
-                    <button class="btn-produto">+</button>
-                </div>
-                <!-- produto -->
-
-                <!-- produto -->
-                <div class="div-produto">
-                    <div class="div-img-produto">
-                        <img class="img-produto" src="img/produtos/coca.png" alt="">
-                    </div>
-                    <h3 class="nome-produto">Coca-cola 2L</h3>
-                    <h4 class="valor-produto">R$ 12,00</h4>
-                    <p class="desc-produto"></p>
-                    <button class="btn-produto">+</button>
-                </div>
-                <!-- produto -->
-
-                <!-- produto -->
-                <div class="div-produto">
-                    <div class="div-img-produto">
-                        <img class="img-produto" src="img/produtos/coca.png" alt="">
-                    </div>
-                    <h3 class="nome-produto">Coca-cola 2L</h3>
-                    <h4 class="valor-produto">R$ 12,00</h4>
-                    <p class="desc-produto"></p>
-                    <button class="btn-produto">+</button>
-                </div>
-                <!-- produto -->
-
-                <!-- produto -->
-                <div class="div-produto">
-                    <div class="div-img-produto">
-                        <img class="img-produto" src="img/produtos/coca.png" alt="">
-                    </div>
-                    <h3 class="nome-produto">Coca-cola 2L</h3>
-                    <h4 class="valor-produto">R$ 12,00</h4>
-                    <p class="desc-produto"></p>
-                    <button class="btn-produto">+</button>
-                </div>
-                <!-- produto -->
-
-            </div>
-            <!-- divprodutos -->
-
-
 
 
         </div>
     </section>
-
+</main>
 
 
 </body>

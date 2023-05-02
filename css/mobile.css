@@ -17,6 +17,10 @@
 
 
 /* === GLOBAL === */
+main {
+    margin: 0 auto;
+    border-radius: 0;
+}
 section {
     padding: 100px 20px;
 }
