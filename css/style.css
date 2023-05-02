@@ -5,6 +5,8 @@
 
 /* === CARRINHO === */
 #btn-mostrar-carrinho {
+    width: 80%;
+    max-width: 400px;
     display: block;
     position: fixed;
     z-index: 900;
@@ -13,30 +15,49 @@
     bottom: 10px;
     left: 50%;
     transform: translate(-50%);
-    width: 400px;
     padding: 20px;
     font-weight: 600;
     border-radius: 30px;
 }
 .janela-carrinho {
-    bottom: -80vh;
+    bottom: -1300px;
     position: fixed;
     z-index: 1000;
-    background-color: var(--color_destaque);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     width: 80%;
-    max-width: 500px;
-    min-height: 30vh;
-    max-height: 50vh;
+    max-width: 700px;
+    height: 500px;
     left: 50%;
     transform: translate(-50%);
     border-radius: 30px 30px 0 0;
     padding: 20px 20px 100px 20px;
     overflow-y: auto;
-    transition: 400ms;
-    opacity: 0;
+    transition: 200ms;
+    opacity: 1;
 } .janela-carrinho-ativada {
     bottom: 0;
     opacity: 1;
+}
+.janela-carrinho::-webkit-scrollbar {
+    width: 12px;
+	background-color: #F5F5F5;
+}
+#btn-fechar-carrinho {
+    position: sticky;
+    top: 0;
+    margin: 0 auto 40px;
+    background-color: var(--color_destaque);
+    color: white;
+}
+.a-button {
+    background-color: green;
+    color: white;
+    margin: 20px;
+}
+#carrinho button {
+    width: auto;
+    padding: 10px;
 }
 /* === CARRINHO === */
 

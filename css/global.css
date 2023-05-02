@@ -33,11 +33,16 @@ body {
 }
 main {
     max-width: 800px;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    
     border-radius: 30px;
     overflow: hidden;
-    transition: 400ms;
+    transition: 200ms;
+    
+}
+.sem-foco {
+    filter: brightness(40%) blur(3px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 section {
     padding: 100px 70px;
@@ -85,7 +90,7 @@ p, a {
     font-weight: 700;
 }
 
-button {
+button, .a-button {
     padding: 20px 20px;
     border-radius: 30px;
     font-size: 16px;
@@ -96,7 +101,7 @@ button {
     transition: 400ms;
     margin: 10px 20px;
     cursor: pointer;
-}button:hover {
+}button:hover, .a-button:hover {
     background-color: var(--color_destaque);
     color: var(--color_font_white);
 }
