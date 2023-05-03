@@ -17,9 +17,8 @@
 <body>
 
 
-<span id="btn-mostrar-carrinho" onclick="mostrarCarrinho()">Mostrar Carrinho</span>
 <div class="janela-carrinho">
-    <button id="btn-fechar-carrinho" onclick="fecharCarrinho()">Continuar Compras</button>
+    <button onclick="fecharCarrinho()"">Continuar Compras</button>
     <div id="carrinho"></div>
     <a href="" target="_blank" class="a-button" id="link-whatsapp">Fazer pedido</a>
 </div>
@@ -27,10 +26,23 @@
 
 
 <main>
+
+    <header>
+        <div class="div-content-sec">
+            <a href="#" class="logo">SUA<br>L<span class="span_destaque">O</span>G<span class="span_destaque">O</span></a>
+            <nav class="nav-header">
+                <img id="btn-mostrar-carrinho" onclick="mostrarCarrinho()" class="icons icon-cart" src="img/icons/icon-cart.svg" alt="">
+                <a href="#" class="a-button">contato</a>
+                <a href="#" class="a-button2">Fazer pedido</a>
+                <img class="icons icon-menu" src="img/icons/icon-menu.svg" alt="">
+            </nav>
+        </div>
+    </header>
+
+
+
+
     <section id="inicio">
-        <header>
-            <a href="#" class="logo">SUA LOGO</a>
-        </header>
         <div class="div-content-sec">
             <span class="span_destaque">Um sistema simples</span>
             <h1 id="h1-header">Exatamente o que você procura</h1>

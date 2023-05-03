@@ -16,6 +16,16 @@
 
 
 
+/*  === HEADER === */
+header .a-button, header .a-button2 {
+    display: none;
+}
+/*  === HEADER === */
+
+
+
+
+
 /* === GLOBAL === */
 main {
     margin: 0 auto;
