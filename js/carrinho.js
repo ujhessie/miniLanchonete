@@ -45,7 +45,7 @@ function atualizarCarrinho() {
     let total = 0;
     carrinho.forEach(item => {
         const itemElemento = document.createElement('li');
-        itemElemento.textContent = `${item.nome} - R$ ${item.preco} x ${item.quantidade}`;
+        itemElemento.innerHTML = `${item.nome} - R$ ${item.preco} x ${item.quantidade} `;
 
       
 

@@ -15,6 +15,9 @@
 html {
   scroll-behavior: smooth;
 }
+.carrinho-ativo {
+    overflow: hidden;
+}
 
 
 :root {
@@ -28,19 +31,18 @@ html {
 
 
 body {
-    background-color: #fafafa;
     color: var(--color_font_black_primary);
 }
 main {
     margin: 0 auto;
     overflow: hidden;
     transition: 200ms;
-    
 }
 .sem-foco {
-    filter: brightness(40%) blur(3px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+   filter: brightness(40%) blur(5px);
+   backdrop-filter: brightness(80%);
 }
+
 section {
     padding: 100px 70px;
 }

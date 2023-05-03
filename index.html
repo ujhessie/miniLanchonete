@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="carrinho-ativo" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,15 +18,20 @@
 
 
 <div class="janela-carrinho">
-    <button onclick="fecharCarrinho()"">Continuar Compras</button>
-    <div id="carrinho"></div>
-    <a href="" target="_blank" class="a-button" id="link-whatsapp">Fazer pedido</a>
+    <nav class="header-carrinho">
+        <span>Seu carrinho</span>
+        <img onclick="fecharCarrinho()" src="img/icons/icon-close.svg" alt="" class="icons">
+    </nav>
+    <ul id="carrinho"></ul>
+    <div class="div-chckout">
+        <span class="btn-carrinho" onclick="fecharCarrinho()" >Continuar comprando</span>
+        <a href="" target="_blank" class="btn-carrinho" id="link-whatsapp">Finalizar compra</a>
+    </div>
 </div>
 
 
 
 <main>
-
     <header>
         <div class="div-content-sec">
             <a href="#" class="logo">SUA<br>L<span class="span_destaque">O</span>G<span class="span_destaque">O</span></a>

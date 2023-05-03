@@ -5,28 +5,24 @@
 
 /* === CARRINHO === */
 .janela-carrinho {
-    bottom: -1300px;
     position: fixed;
     z-index: 1000;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    width: 80%;
-    max-width: 700px;
-    height: 500px;
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 30px 30px 0 0;
-    padding: 20px 20px 100px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.01);
+    width: 100%;
+    max-width: 600px;
+    right: -530px;
+    height: 100%;
     overflow-y: auto;
     transition: 200ms;
-    opacity: 1;
+    opacity: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 } .janela-carrinho-ativada {
-    bottom: 0;
     opacity: 1;
-}
-.janela-carrinho::-webkit-scrollbar {
-    width: 12px;
-	background-color: #F5F5F5;
+    right: 0;
 }
 #btn-fechar-carrinho {
     position: sticky;
@@ -43,6 +39,58 @@
 #carrinho button {
     width: auto;
     padding: 10px;
+}
+.header-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.header-carrinho span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#carrinho {
+    padding: 100px 20px;
+}
+.div-chckout {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.btn-carrinho{
+    display: block;
+    padding: 20px 20px;
+    font-weight: 600;
+    width: 80%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 200ms;
+}
+.btn-carrinho:hover {
+    scale: 0.9;
+}
+#link-whatsapp {
+    background-color: var(--color_destaque);
+    border-radius: 30px;
+    color: white;
+}
+#carrinho button {
+    display: inline;
 }
 /* === CARRINHO === */
 
