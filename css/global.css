@@ -62,8 +62,8 @@ h2 {
 }
 
 h3 {
-    font-size: 22px;
-    margin-bottom: 16px;
+    font-size: 32px;
+    margin-bottom: 14px;
     line-height: 2rem;
 }
 
@@ -125,7 +125,7 @@ button, .a-button {
 }
 hr {
     height: .5px;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     background-color: #cacaca;
-    margin: 50px 0;
 }

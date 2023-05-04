@@ -92,6 +92,45 @@
 #carrinho button {
     display: inline;
 }
+
+.li-item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 0.1px solid var(--color_black_secundary);
+}
+.li-item-carrinho p, .li-item-carrinho span {
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.2rem;
+    margin: 0;
+    color: var(--color_black_secundary);
+}
+.btn-acao-carrinho {
+    margin: 8px;
+    display: block;
+}
+.btn-acao-carrinho:hover {
+    scale: 0.9;
+}
+.div2-item-carrinho {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.span-remover {
+    text-decoration: underline var(--color_black_secundary) 1.5px;
+    cursor: pointer;
+}
+.total-carrinho {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 20px;
+    margin: 10px;
+}
 /* === CARRINHO === */
 
 
@@ -163,6 +202,19 @@ header .a-button, header .a-button2 {
 
 
 /* === SEC_INICIO === */
+.cr-inicio {
+    font-weight: 600;
+    color: var(--color_font_white);
+    transition: 200ms;
+}
+.cr-inicio a {
+    font-weight: 600;
+    color: var(--color_destaque);
+    text-decoration: underline;
+}
+.cr-inicio:hover {
+    scale: .9;
+}
 #inicio {
 
     padding-top: 150px;
@@ -179,9 +231,6 @@ header .a-button, header .a-button2 {
 }
 #h1-header {
     text-transform: uppercase;
-    color: var(--color_font_white);
-}
-#inicio p, #inicio h2{
     color: var(--color_font_white);
 }
 #div-btns-inicio {
@@ -219,10 +268,14 @@ header .a-button, header .a-button2 {
 
 
 /* === SEC_PRODUTOS === */
+#produtos {
+    position: relative;
+}
 .nav-categorias {
     display: flex;
     justify-content: left;
     overflow-x: auto;
+    position: relative;
 }
 .item-nav-categorias {
     display: block;
@@ -236,6 +289,7 @@ header .a-button, header .a-button2 {
 } .item-nav-categorias:hover {
     background-color: var(--color_destaque);
     color: white;
+    scale: .9;
 }
 /* === DIV_PRODUTOS === */
 .div-produtos {
@@ -280,6 +334,7 @@ header .a-button, header .a-button2 {
     transition: 200ms;
     cursor: pointer;
     line-height: 32px;
+    font-size: 22px;
 }
 .valor-produto {
     margin: 0;
@@ -316,3 +371,23 @@ header .a-button, header .a-button2 {
  }
 /* === DIV_PRODUTOS === */
 /* === SEC_PRODUTOS === */
+
+
+
+
+
+/* === FOOTER === */
+.copyrigth {
+    background-color: var(--color_font_black_primary);
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+}
+.copyrigth a {
+    background-color: var(--color_font_black_primary);
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* === FOOTER === */

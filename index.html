@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="carrinho-ativo" lang="pt-br">
+<html class="" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,19 @@
         <span>Seu carrinho</span>
         <img onclick="fecharCarrinho()" src="img/icons/icon-close.svg" alt="" class="icons">
     </nav>
-    <ul id="carrinho"></ul>
+    <ul id="carrinho">
+        <!-- <li class="li-item-carrinho">
+            <div class="div1-item-carrinho">
+                <p>Nome do produto (2x)</p>
+                <p>R$ 32,00</p>
+            </div>
+            <div class="div2-item-carrinho">
+                <span class="span-remover">Remover</span>
+                <button class="btn-acao-carrinho">+</button>
+                <button class="btn-acao-carrinho">-</button>
+            </div>
+        </li> -->
+    </ul>
     <div class="div-chckout">
         <span class="btn-carrinho" onclick="fecharCarrinho()" >Continuar comprando</span>
         <a href="" target="_blank" class="btn-carrinho" id="link-whatsapp">Finalizar compra</a>
@@ -51,10 +63,13 @@
         <div class="div-content-sec">
             <span class="span_destaque">Um sistema simples</span>
             <h1 id="h1-header">Exatamente o que você procura</h1>
-            <p>ATENÇÃO: Esta é apenas uma página de demostação projetada e desenvolvida por <span class="span_destaque">Jesse Rodrigues</span>.</p>
+            <p class="cr-inicio">ATENÇÃO: Esta é apenas uma página de demostação projetada e desenvolvida por<a href="">Jesse Rodrigues</a>.</p>
             <div id="div-btns-inicio">
                 <a href="#produtos"><button id="btn1">Fazer pedido</button></a> 
                 <a href="#produtos"><button>Ver cardápio</button></a>
+            </div>
+            <div class="div-redes-sociais">
+                <img src="" alt="" class="icon-rede-social">
             </div>
             <ul class="skills">
                 <li>
@@ -161,6 +176,8 @@
     </section>
 </main>
 
+<footer>
+    <p class="copyrigth">Página projetada e desenvolvida por <a href="https://beacons.ai/ujhessie_" target="_blank">ujhessie_(Jesse Rodrigues)</a></p>
 
 </body>
 </html>

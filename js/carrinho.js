@@ -44,37 +44,61 @@ function atualizarCarrinho() {
 
     let total = 0;
     carrinho.forEach(item => {
-        const itemElemento = document.createElement('li');
-        itemElemento.innerHTML = `${item.nome} - R$ ${item.preco} x ${item.quantidade} `;
-
-      
-
-        const diminuirBotao = document.createElement('button');
-        diminuirBotao.textContent = '-';
-        diminuirBotao.onclick = () => diminuirQuantidade(item.id);
-        itemElemento.appendChild(diminuirBotao);
 
 
-        const removerBotao = document.createElement('button');
-        removerBotao.textContent = 'Remover';
-        removerBotao.onclick = () => removerItem(item.id);
-        itemElemento.appendChild(removerBotao);
+        const liItem = document.createElement('li')
+        liItem.setAttribute('class', 'li-item-carrinho')
+        
+        const div1Carrinho = document.createElement('div')
+        div1Carrinho.setAttribute('class', 'div1-item-carrinho')
+
+        const nomeItemCarrinho = document.createElement('p')
+        nomeItemCarrinho.innerHTML = `${item.nome} (${item.quantidade}x)`
+
+        const valorItemCarrinho = document.createElement('p')
+        valorItemCarrinho.innerHTML = `R$ ${item.preco}`
+
+        div1Carrinho.appendChild(nomeItemCarrinho)
+        div1Carrinho.appendChild(valorItemCarrinho)
 
 
 
-        const aumentarBotao = document.createElement('button');
-        aumentarBotao.textContent = '+';
-        aumentarBotao.onclick = () => aumentarQuantidade(item.id);
-        itemElemento.appendChild(aumentarBotao);
+        const div2Carrinho = document.createElement('div')
+        div1Carrinho.setAttribute('class', 'div1-item-carrinho')
 
-        carrinhoElemento.appendChild(itemElemento);
+        const spanRemover = document.createElement('span')
+        spanRemover.setAttribute('class', 'span-remover')
+        spanRemover.innerHTML = 'Remover'
+        spanRemover.onclick = () => removerItem(item.id);
+
+        const btnAdd = document.createElement('button')
+        btnAdd.setAttribute('class', 'btn-acao-carrinho')
+        btnAdd.innerHTML = '+'
+        btnAdd.onclick = () => aumentarQuantidade(item.id);
+
+        const btnRemove = document.createElement('button')
+        btnRemove.setAttribute('class', 'btn-acao-carrinho')
+        btnRemove.innerHTML = '-'
+        btnRemove.onclick = () => diminuirQuantidade(item.id);
+
+        div2Carrinho.appendChild(spanRemover)
+        div2Carrinho.appendChild(btnRemove)
+        div2Carrinho.appendChild(btnAdd)
+
+        liItem.appendChild(div1Carrinho)
+        liItem.appendChild(div2Carrinho)
+
+        carrinhoElemento.appendChild(liItem)
+
+
 
         total += item.preco * item.quantidade;
     });
 
     // Exibir o total no carrinho
-    const totalElemento = document.createElement('li');
-    totalElemento.textContent = `Total: R$ ${total}`;
+    const totalElemento = document.createElement('p');
+    totalElemento.innerHTML = `Total: R$ ${total}`;
+    totalElemento.setAttribute('class', 'total-carrinho')
     carrinhoElemento.appendChild(totalElemento);
 
 
@@ -88,11 +112,13 @@ function atualizarCarrinho() {
     }
 
     const itens = obterItensCarrinho(); // Função fictícia para obter os itens do carrinho
-    let mensagem = 'Olá, estou interessado em fazer uma compra! Meu carrinho: \n';
+    let mensagem = 'Olá, estou interessado em fazer uma compra! Meu carrinho: \n \n';
     itens.forEach(item => {
-        mensagem += `- ${item.nome} (${item.quantidade}x): R$ ${item.preco} \n`;
+
+        mensagem += `- ${item.quantidade}x ${item.nome}: R$ ${item.preco*item.quantidade} \n \n`
+        // mensagem += `- ${item.nome} (${item.quantidade}x): R$ ${item.preco} \n \n`;
     });
-    mensagem += `Total: R$ ${total.toFixed(2)}`; // Incluir o valor total na mensagem
+    mensagem += `*Total:* R$ ${total.toFixed(2)}`; // Incluir o valor total na mensagem
 
     // Atualizar o link do WhatsApp com a mensagem do carrinho
     const linkWhatsApp = document.getElementById('link-whatsapp');
