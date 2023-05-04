@@ -80,6 +80,7 @@
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: 200ms;
+    background-color: white;
 }
 .btn-carrinho:hover {
     scale: 0.9;
@@ -204,25 +205,23 @@ header .a-button, header .a-button2 {
 /* === SEC_INICIO === */
 .cr-inicio {
     font-weight: 600;
-    color: var(--color_font_white);
     transition: 200ms;
+    font-size: 0.8rem;
 }
 .cr-inicio a {
     font-weight: 600;
     color: var(--color_destaque);
     text-decoration: underline;
+    font-size: 0.8rem;
 }
 .cr-inicio:hover {
     scale: .9;
 }
 #inicio {
-
-    padding-top: 150px;
-    background-image: url('../img/bg-inicio.png');
+    padding-top: 100px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: inset 100vw 100vh 100px rgba(0, 0, 0, 0.507);
     border-radius: 0 0 30px 30px;
 }
 .div-content-sec {
@@ -231,30 +230,27 @@ header .a-button, header .a-button2 {
 }
 #h1-header {
     text-transform: uppercase;
-    color: var(--color_font_white);
 }
 #div-btns-inicio {
     margin: 30px 0;
 }
 #btn1 {
     background-color: var(--color_destaque);
-    color: var(--color_font_white);
     transition: 400ms;
+    color: var(--color_font_white);
 } #btn1:hover {
     background-color: var(--color_destaque_hover);
 }
-.skills {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+#btn2 {
+    color: var(--color_font_black_primary);
 }
+#btn2:hover {
+    color: var(--color_font_white);
+}
+
 .skills h2, .skills p {
     margin: 0;
     text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.623);
-}
-#inicio button {
-    color: var(--color_font_white);
 }
 .icon {
     font-size: 40px;
@@ -276,15 +272,16 @@ header .a-button, header .a-button2 {
     justify-content: left;
     overflow-x: auto;
     position: relative;
+    margin-bottom: 20px;
 }
 .item-nav-categorias {
     display: block;
-    color: var(--color_font_black_primary);
+    color: var(--color_black_secundary);
+    font-weight: 600;
     border-radius: 30px;
-    margin: 38px 10px 48px 10px;
-    margin-bottom: 48px;
+    margin: 10px;
     padding: 15px 22px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     transition: 300ms;
 } .item-nav-categorias:hover {
     background-color: var(--color_destaque);

@@ -44,7 +44,7 @@ main {
 }
 
 section {
-    padding: 100px 70px;
+    padding: 70px 70px;
 }
 
 h1 {
@@ -62,7 +62,7 @@ h2 {
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 26px;
     margin-bottom: 14px;
     line-height: 2rem;
 }
