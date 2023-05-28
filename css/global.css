@@ -9,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 
@@ -45,6 +46,7 @@ main {
 
 section {
     padding: 70px 70px;
+    background-color: #fafafa;
 }
 
 h1 {
@@ -57,14 +59,16 @@ h1 {
 
 h2 {
     font-size: 32px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     line-height: 2rem;
+    color: var(--color_font_black_primary);
 }
 
 h3 {
     font-size: 26px;
     margin-bottom: 14px;
     line-height: 2rem;
+    color: var(--color_black_secundary);
 }
 
 h4 {
@@ -91,7 +95,7 @@ p, a {
 
 button, .a-button {
     padding: 20px 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     width: 220px;
@@ -108,7 +112,7 @@ button, .a-button {
 .button2, .a-button2 {
     color: var(--color_font_white);
     padding: 20px 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     width: 220px;
@@ -128,4 +132,10 @@ hr {
     width: 80%;
     margin: 0 auto;
     background-color: #cacaca;
+}
+.categoria {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 44px;
+    text-decoration: underline;
 }
