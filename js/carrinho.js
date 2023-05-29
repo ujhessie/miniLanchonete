@@ -1,5 +1,6 @@
 const carrinho = [];
     
+    
 function adicionarItem(id, nome, preco) {
     const item = {id, nome, preco, quantidade: 1};
     const index = carrinho.findIndex(item => item.id === id);
