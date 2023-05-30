@@ -49,6 +49,11 @@ section {
     background-color: #fafafa;
 }
 
+.div-content-sec {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 h1 {
     font-size: 38px;
     font-weight: 700;
@@ -90,7 +95,11 @@ p, a {
     color: var(--color_destaque);
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: var(--color_font_white);
+    padding: 0 10px;
+    border-radius: 10px;
 }
 
 button, .a-button {
@@ -107,7 +116,7 @@ button, .a-button {
 }button:hover, .a-button:hover {
     background-color: var(--color_destaque);
     color: var(--color_font_white);
-    scale: 0.9;
+    scale: 0.99;
 }
 .button2, .a-button2 {
     color: var(--color_font_white);
