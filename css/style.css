@@ -345,7 +345,7 @@ header .a-button, header .a-button2 {
 .div-produto {
     width: 320px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border-radius: 10px;
 } .div-produto:hover  .nome-produto {
     color: var(--color_destaque);
@@ -433,6 +433,7 @@ header .a-button, header .a-button2 {
 .btns-captura {
     display: flex;
     justify-content: start;
+    gap: 8px;
 }
 .btns-captura .a-button {
     display: block;
