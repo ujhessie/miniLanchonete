@@ -214,11 +214,14 @@ header .a-button, header .a-button2 {
     font-size: 0.7rem;
     color: var(--color_font_white);
     filter: brightness(0.8);
+    text-align: start;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
 }
 .cr-inicio a {
     text-decoration: underline;
     color: var(--color_font_white);
     font-size: 0.7rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
 }
 .cr-inicio:hover {
     scale: .99;
@@ -226,6 +229,7 @@ header .a-button, header .a-button2 {
 .text2-inicio {
     color: var(--color_font_white);
     font-weight: 600;
+    text-align: start;
 }
 #inicio {
     padding-top: 150px;
@@ -235,25 +239,45 @@ header .a-button, header .a-button2 {
     border-radius: 0 0 20px 20px;
     background-image: url("../img/bg-inicio2.png");
     box-sizing: border-box;
+    box-shadow: inset 50vw 0px 400px #00000075;
+}
+.bem-vindo {
+    color: var(--color_destaque);
+    text-align: start;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: var(--color_font_white);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
 }
 #h1-header {
     margin-top: 0;
     text-transform: uppercase;
     color: var(--color_font_white);
+    text-align: start;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.452);
 }
 #div-btns-inicio {
     margin: 30px 0;
+    display: flex;
+    justify-content: start;
+    gap: 6px;
 }
 #btn1 {
     background-color: var(--color_destaque);
     transition: 400ms;
     color: var(--color_font_white);
+    margin: 0;
 } #btn1:hover {
     background-color: var(--color_destaque_hover);
 }
 #btn2 {
     color: var(--color_font_white);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    margin: 0;
 }
 #btn2:hover {
     color: var(--color_font_white);

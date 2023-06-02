@@ -55,11 +55,11 @@ section {
 }
 
 h1 {
-    font-size: 38px;
+    font-size: 52px;
     font-weight: 700;
     margin-top: 24px;
     margin-bottom: 10px;
-    line-height: 3rem;
+    line-height: 3.1rem;
 }
 
 h2 {
@@ -91,16 +91,6 @@ p, a {
     line-height: 1.2rem;
 }
 
-.span_destaque {
-    color: var(--color_destaque);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.2rem;
-    background-color: var(--color_font_white);
-    padding: 0 10px;
-    border-radius: 10px;
-}
 
 button, .a-button {
     padding: 20px 20px;

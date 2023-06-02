@@ -27,6 +27,9 @@ header .a-button, header .a-button2 {
 
 
 /* === GLOBAL === */
+h1 {
+    font-size: 42px;
+}
 main {
     margin: 0 auto;
     border-radius: 0;
@@ -42,6 +45,23 @@ button {
 /* === GLOBAL === */
 
 
+
+
+/* === SEC_INICIO === */
+.cr-inicio, .text2-inicio, .bem-vindo, #h1-header  {
+    text-align: center;
+}
+.bem-vindo {
+    margin: 0 auto;
+}
+#div-btns-inicio {
+    flex-direction: column;
+}
+#btn1, #btn2  {
+    width: 100%;
+}
+
+/* === SEC_INICIO === */
 
 
 
