@@ -12,46 +12,51 @@
     box-sizing: border-box;
 }
 
+/* 
 
-html {
-  scroll-behavior: smooth;
-}
-.carrinho-ativo {
-    overflow: hidden;
-}
+background-color: var(--corPrincipal);
+background-color: var(--corBgBranco);
+color: var(--corFonteBranco);
 
+*/
 
 :root {
-    --color_bg_page: #FDFDFD;
-    --color_destaque: #ff5634;
-    --color_destaque_hover: #e13f1f;
-    --color_font_black_primary: #121212;
-    --color_black_secundary: #656565;
-    --color_font_white: #ffffff;
+
+    /* Variáveis de cores */
+    --corPrincipal: #ff5634;
+    --corSecundária: ;
+
+    /* cores de backgrounds */
+    --corBgBranco: #fdfdfd;
+    --corBgPreto: #121212;
+
+    /* cores de fontes */
+    --corFonteBranco: #fff;
+    --corFontePreto: #121212;
+
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 
-body {
-    color: var(--color_font_black_primary);
-}
 main {
     margin: 0 auto;
     overflow: hidden;
     transition: 200ms;
 }
-.sem-foco {
+.sem-foco { /* efeito no main quando carrinho está ativado*/
    filter: brightness(40%) blur(5px);
    backdrop-filter: brightness(80%);
 }
 
-section {
-    padding: 70px 70px;
-    background-color: #fafafa;
-}
+
 
 .div-content-sec {
     max-width: 1100px;
     margin: 0 auto;
+    position: relative;
 }
 
 h1 {
@@ -66,14 +71,14 @@ h2 {
     font-size: 32px;
     margin-bottom: 16px;
     line-height: 2rem;
-    color: var(--color_font_black_primary);
+    color: var(--corFontePreto);
 }
 
 h3 {
     font-size: 26px;
     margin-bottom: 14px;
     line-height: 2rem;
-    color: var(--color_black_secundary);
+    color: var(--corFontePreto);
 }
 
 h4 {
@@ -87,7 +92,7 @@ p, a {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
-    color: var(--color_black_secundary);
+    color: var(--corFontePreto);
     line-height: 1.2rem;
 }
 
@@ -104,33 +109,25 @@ button, .a-button {
     margin: 10px 20px;
     cursor: pointer;
 }button:hover, .a-button:hover {
-    background-color: var(--color_destaque);
-    color: var(--color_font_white);
-    scale: 0.99;
+    background-color: var(--corPrincipal);
+    color: var(--corFonteBranco);
 }
 .button2, .a-button2 {
-    color: var(--color_font_white);
+    color: var(--corFonteBranco);
     padding: 20px 20px;
     border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     width: 220px;
-    background-color: var(--color_destaque);
+    background-color: var(--corPrincipal);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
     transition: 400ms;
     margin: 10px;
     cursor: pointer;
     transition: 200ms;
 }.button2:hover, .a-button2:hover {
-    background-color: var(--color_destaque_hover);
-    color: var(--color_font_white);
-    scale: 0.9;
-}
-hr {
-    height: .5px;
-    width: 80%;
-    margin: 0 auto;
-    background-color: #cacaca;
+    background-color: var(--corPrincipal);
+    color: var(--corFonteBranco);
 }
 .categoria {
     font-size: 28px;
