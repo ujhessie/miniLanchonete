@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550.71 411.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f65534;
+        font-family: Poppins-Bold, Poppins;
+        font-size: 195.91px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Poppins-SemiBold, Poppins;
+        font-size: 156px;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <text transform="translate(117.64 132.68)"><tspan class="cls-2"><tspan x="0" y="0">SUA</tspan></tspan><tspan class="cls-1"><tspan x="-117.64" y="160">LOGO</tspan></tspan></text>
+  </g>
+</svg>

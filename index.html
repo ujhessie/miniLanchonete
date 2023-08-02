@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="js/carrinho.js" defer></script>
     <script src="js/produtos.js" defer></script>
@@ -17,90 +16,88 @@
 </head>
 <body>
 
-
-<div class="janela-carrinho">
-    <nav class="header-carrinho">
-        <span>Seu carrinho</span>
-        <img onclick="fecharCarrinho()" src="img/icons/icon-close.svg" alt="" class="icons">
-    </nav>
-    <ul id="carrinho">
-        <!-- <li class="li-item-carrinho">
-            <div class="div1-item-carrinho">
-                <p>Nome do produto (2x)</p>
-                <p>R$ 32,00</p>
-            </div>
-            <div class="div2-item-carrinho">
-                <span class="span-remover">Remover</span>
-                <button class="btn-acao-carrinho">+</button>
-                <button class="btn-acao-carrinho">-</button>
-            </div>
-        </li> -->
-    </ul>
-    <div class="div-chckout">
-        <span class="btn-carrinho" onclick="fecharCarrinho()" >Continuar comprando</span>
-        <a href="" target="_blank" class="btn-carrinho" id="link-whatsapp">Finalizar compra</a>
+    <div class="janela-carrinho">
+        <nav class="header-carrinho">
+            <span>Seu carrinho</span>
+            <img onclick="fecharCarrinho()" src="img/icons/icon-close.svg" alt="" class="icons">
+        </nav>
+        <ul id="carrinho">
+            <!-- <li class="li-item-carrinho">
+                <div class="div1-item-carrinho">
+                    <p>Nome do produto (2x)</p>
+                    <p>R$ 32,00</p>
+                </div>
+                <div class="div2-item-carrinho">
+                    <span class="span-remover">Remover</span>
+                    <button class="btn-acao-carrinho">+</button>
+                    <button class="btn-acao-carrinho">-</button>
+                </div>
+            </li> -->
+        </ul>
+        <div class="div-chckout">
+            <span class="btn-carrinho" onclick="fecharCarrinho()" >Continuar comprando</span>
+            <a href="" target="_blank" class="btn-carrinho" id="link-whatsapp">Finalizar compra</a>
+        </div>
     </div>
-</div>
 
 
-
-<main>
-    <header id="header">
-        <div class="div-content-sec">
-            <a href="#" class="logo">SUA<br>LOGO</a>
-            <nav class="nav-header">
-                <img id="btn-mostrar-carrinho" onclick="mostrarCarrinho()" class="icons icon-cart" src="img/icons/icon-cart.svg" alt="">
-                <a href="#" class="a-button">contato</a>
-                <a href="#" class="a-button2">Fazer pedido</a>
-                <img class="icons icon-menu" src="img/icons/icon-menu.svg" alt="">
-            </nav>
-        </div>
-    </header>
-
-
-
-
-    <section id="inicio">
-        <img src="img/hamburguer.png" id="imgParalax" alt="">
-        <div class="div-content-sec">
-            <img src="img/folhas.png" id="imgParalaxFolhas" alt="">
-            <p class="bem-vindo">Seja bem vindo!!</p>
-            <h1 id="h1-header">Exatamente o que<br>você procura</h1>
-            <p class="text2-inicio">Uma página simples com um sistema de carrinho integrado.</p>
-            <div id="div-btns-inicio">
-                <a href="#produtos"><button id="btn1">Fazer pedido</button></a> 
-                <a href="#produtos"><button id="btn2">Ver cardápio</button></a>
+    <main>
+        <header id="header">
+            <div class="div-content-sec">
+                <a class="a-logo-header" href="">
+                    <img class="logo-header" src="img/icons/logo_preta.png" alt="">
+                </a>
+                <nav class="nav-header">
+                    <img id="btn-mostrar-carrinho" onclick="mostrarCarrinho()" class="icons icon-cart" src="img/icons/icon-cart.svg" alt="">
+                    <a href="#" class="a-button">contato</a>
+                    <a href="#" class="a-button2">Fazer pedido</a>
+                    <img class="icons icon-menu" src="img/icons/icon-menu.svg" alt="">
+                </nav>
             </div>
-            <p class="cr-inicio">Esta é uma página de demostação projetada e <br/> desenvolvida por <a href=""><strong>Jesse Rodrigues</strong></a>.</p>
-        </div>
-    </section>
+        </header>
 
-    <section id="produtos">
-        <div class="div-content-sec">
+        <section id="inicio">
+            <img src="img/hamburguer.png" id="imgParalax" alt="">
+            <div class="div-content-sec">
+                <img src="img/folhas.png" id="imgParalaxFolhas" alt="">
+                <p class="bem-vindo">Seja bem vindo!!</p>
+                <h1 id="h1-header">Exatamente o que<br>você procura</h1>
+                <p class="text2-inicio">Uma página simples com um sistema de carrinho integrado.</p>
+                <div id="div-btns-inicio">
+                    <a href="#produtos"><button id="btn1">Fazer pedido</button></a> 
+                    <a href="#produtos"><button id="btn2">Ver cardápio</button></a>
+                </div>
+                <p class="cr-inicio">Esta é uma página de demostação projetada e <br/> desenvolvida por <a href=""><strong>Jesse Rodrigues</strong></a>.</p>
+                <div class="seta-role-pagina">
+                    <img src="img/icons/seta_baixo.png" alt="">
+                    <p>Role a página</p>
+                </div>
+            </div>
+        </section>
 
+        <section id="produtos">
+            <div class="div-content-sec">
 
-            <h2>Cardápio</h2>
-
-
-            <nav class="nav-categorias">
-                <a href="#hamburgueres" class="item-nav-categorias">
-                    <p>Hamburgueres</p>
-                </a>
-                <a href="#pizzas" class="item-nav-categorias">
-                    <img src="img/icons/pizza.png" alt="" class="icon-item-categoria">
-                    <p>Pizzas</p>
-                </a>
-                <a href="#bebidas" class="item-nav-categorias">
-                    <img src="img/icons/bebidas.png" alt="" class="icon-item-categoria">
-                    <p>Bebidas</p>
-                </a>
-            </nav>
-
-
-
-            <!-- DivProdutos -->
-            <div class="content-produtos" id="hamburgueres">
-                <p class="categoria">Hamburgueres</p>
+                <h2 class="h2-destaque">VEJA NOSSO CARDÁPIO:</h2>
+                <nav class="nav-categorias">
+                    <a href="#hamburgueres" class="item-nav-categorias">
+                        <img src="img/icons/hamburguer.png" alt="" class="icon-item-categoria">
+                        <p>Hamburgueres</p>
+                    </a>
+                    <a href="#pizzas" class="item-nav-categorias">
+                        <img src="img/icons/pizza.png" alt="" class="icon-item-categoria">
+                        <p>Pizzas</p>
+                    </a>
+                    <a href="#bebidas" class="item-nav-categorias">
+                        <img src="img/icons/bebidas.png" alt="" class="icon-item-categoria">
+                        <p>Bebidas</p>
+                    </a>
+                </nav>
+                
+                
+                
+                <!-- DivProdutos -->
+                <h3 class="h3-categoria">Hamburgueres</h3>
                 <div class="div-produtos">
                     <!-- produto -->
                     <div class="div-produto">
@@ -126,6 +123,9 @@
                         <button class="btn-produto" onclick=" adicionarItem(1, 'Hamburguer Tradicional', 15)">Adicionar</button>
                     </div>
                     <!-- produto -->
+
+
+
                     <!-- produto -->
                     <div class="div-produto">
                         <div class="div-img-produto">
@@ -139,73 +139,144 @@
                     <!-- produto -->
                 
                 </div>
-            </div>
-            <!-- divprodutos -->
-            <h2>Aqui vai um "BANNER" do freepick</h2>
-            <!-- DivProdutos -->
-            <div class="content-produtos" id="bebidas">
-                <p class="categoria" >Bebidas</p>
+                <!-- divprodutos -->
+
+
+                <!-- Banner -->
+                <div class="div-banner">
+                    <h2 class="h2-marcação">Banner</h2>
+                </div>
+                <!-- Banner -->
+
+
+
+                <!-- DivProdutos -->
+                <h3 class="h3-categoria">Bebidas</h3>
                 <div class="div-produtos">
                     <!-- produto -->
                     <div class="div-produto">
                         <div class="div-img-produto">
-                            <img class="img-produto" src="img/produtos/coca.png" alt="">
-                            <h4 class="valor-produto">R$ 10,00</h4>
+                            <img class="img-produto" src="img/produtos/1.png" alt="">
+                            <h4 class="valor-produto">R$ 15,00</h4>
                         </div>
-                        <h3 class="nome-produto">Coca-Cola 1L</h3>
-                        <p class="desc-produto">Quem não gosta de uma coca geladinha?
-                        </p>
-                        <button class="btn-produto" onclick=" adicionarItem(3, 'Coca-Cola 1L', 10)">Adicionar</button>
+                        <h3 class="nome-produto">Hamburguer tradicional</h3>
+                        <p class="desc-produto">O tradicional com muito sabor. Perfeito para família</p>
+                        <button class="btn-produto" onclick=" adicionarItem(1, 'Hamburguer Tradicional', 15)">Adicionar</button>
                     </div>
                     <!-- produto -->
+
+
                     <!-- produto -->
                     <div class="div-produto">
                         <div class="div-img-produto">
-                            <img class="img-produto" src="img/produtos/coca.png" alt="">
-                            <h4 class="valor-produto">R$ 10,00</h4>
+                            <img class="img-produto" src="img/produtos/1.png" alt="">
+                            <h4 class="valor-produto">R$ 15,00</h4>
                         </div>
-                        <h3 class="nome-produto">Guaraná 1L</h3>
-                        <p class="desc-produto">Para toda a família</p>
-                        <button class="btn-produto" onclick=" adicionarItem(4, 'Guaraná 1L', 30)">Adicionar</button>
+                        <h3 class="nome-produto">Hamburguer tradicional</h3>
+                        <p class="desc-produto">O tradicional com muito sabor. Perfeito para família</p>
+                        <button class="btn-produto" onclick=" adicionarItem(1, 'Hamburguer Tradicional', 15)">Adicionar</button>
                     </div>
                     <!-- produto -->
+                    
+
+
                     <!-- produto -->
                     <div class="div-produto">
                         <div class="div-img-produto">
-                            <img class="img-produto" src="img/produtos/coca.png" alt="">
-                            <h4 class="valor-produto">R$ 10,00</h4>
+                            <img class="img-produto" src="img/produtos/2.png" alt="">
+                            <h4 class="valor-produto">R$ 30,00</h4>
                         </div>
-                        <h3 class="nome-produto">Guaraná 1L</h3>
-                        <p class="desc-produto">Para toda a família</p>
-                        <button class="btn-produto" onclick=" adicionarItem(4, 'Guaraná 1L', 30)">Adicionar</button>
+                        <h3 class="nome-produto">Macarronada Tradicional</h3>
+                        <p class="desc-produto">O tradicional com muito sabor. Perfeito para família</p>
+                        <button class="btn-produto" onclick=" adicionarItem(2, 'Macarronada Tradicional', 30)">Adicionar</button>
                     </div>
                     <!-- produto -->
                 
                 </div>
-            </div>
-            <!-- divprodutos -->
+                <!-- divprodutos -->
 
+
+
+                <hr>
+            </div>
+        </section>
+
+
+        <section id="captura">
+            <div class="div-content-sec" id="content-captura">
+
+                <!-- <h2>Precisa de uma página como esta?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis suscipit blanditiis quos repellendus facilis itaque architecto veritatis laborum ducimus.</p>
+                <div class="btns-captura">
+                    <a href="#" class="a-button b1-captura">Ver mais opções</a>
+                    <a href="#" class="a-button b2-captura">Eu quero esta página</a>
+                </div> -->
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="div-content-sec">
+
+            <div class="div-footer">
+                <a href="">
+                    <img class="logo-footer" src="img/icons/logo_branca.png" alt="">
+                </a>
+                <P>Entre em contato conosco ou acesse nossas redes sociais.</P>
+
+                <ul class="ul-redes-sociais-footer">
+
+                    <li>
+                        <a href="#">e</a>
+                    </li>
+                    <li>
+                        <a href="#">G</a>
+                    </li>
+                    <li>
+                        <a href="#">Ê</a>
+                    </li>
+                    <li>
+                        <a href="#">î</a>
+                    </li>
+                </ul>
+
+                <div class="">    
+                    <!-- E-mail -->
+
+                    <!-- E-mail -->
+
+                    </div>
+            </div>
+
+            <!-- <div class="div-footer">
+                <h2>Contate-nos</h2>
+                <div class="div-contato-footer">
+                    <img src="img/icons/icon-email.svg" alt="" class="icon-div-contato-footer">
+                    <div class="div-icon-contato">
+                        <p>e-mail</p>
+                        <a href="#">seuemail.com</a>
+                    </div>
+                </div>
+                <p>email</p>
+                <p>Número</p>
+            </div>
+
+            <div class="div-footer">
+                <h2>Menu principal</h2>
+                <a href="">inicio</a>
+                <a href="">Cardápio</a>
+                <a href="">Redes sociais</a>
+            </div> -->
 
         </div>
-    </section>
+    </footer>
 
-    <section id="captura">
-        <div class="div-content-sec" id="content-captura">
-            <h2>Precisa de uma página como esta?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis suscipit blanditiis quos repellendus facilis itaque architecto veritatis laborum ducimus.</p>
-            <div class="btns-captura">
-                <a href="#" class="a-button b1-captura">Ver mais opções</a>
-                <a href="#" class="a-button b2-captura">Eu quero esta página</a>
-            </div>
-        </div>
-    </section>
-
-
-
-</main>
-
-<footer>
-    <p class="copyrigth">Página projetada e desenvolvida por <a href="https://beacons.ai/ujhessie_" target="_blank">ujhessie_(Jesse Rodrigues)</a></p>
+    <p class="copyrigth">© Projetada e desenvolvida por <a href="https://beacons.ai/ujhessie_" target="_blank">Jesse Rodrigues</a></p>
 
 </body>
 </html>

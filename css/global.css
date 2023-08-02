@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: "icons";
+    src: url("../fontes/social_shapes/Social_Shapes.ttf");
+}
 
 * {
     margin: 0;
     border: 0;
     padding: 0;
     text-decoration: none;
-    text-align: center;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 /* 
@@ -24,6 +28,7 @@ color: var(--corFonteBranco);
 
     /* Variáveis de cores */
     --corPrincipal: #ff5634;
+    /* --corPrincipal: rgb(255, 86, 52); */
     --corSecundária: ;
 
     /* cores de backgrounds */
@@ -46,17 +51,37 @@ main {
     overflow: hidden;
     transition: 200ms;
 }
-.sem-foco { /* efeito no main quando carrinho está ativado*/
+
+/* efeito no main quando carrinho está ativado*/
+/*
+.sem-foco { 
    filter: brightness(40%) blur(5px);
    backdrop-filter: brightness(80%);
 }
 
+*/
 
+section{
+    padding: 50px;
+    background-color: var(--corBgBranco);
+}
+.div-banner {
+    width: 100%;
+    aspect-ratio: 234/60;
+    background-color: var(--corFontePreto);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .div-content-sec {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
+}
+.div-content-sec > * {
+    z-index: 100;
 }
 
 h1 {
@@ -64,14 +89,29 @@ h1 {
     font-weight: 700;
     margin-top: 24px;
     margin-bottom: 10px;
-    line-height: 3.1rem;
+    line-height: 3.5rem;
+    z-index: 1000;
 }
+
 
 h2 {
     font-size: 32px;
     margin-bottom: 16px;
     line-height: 2rem;
     color: var(--corFontePreto);
+}
+.h2-destaque {
+    background-color: var(--corPrincipal);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--corFonteBranco);
+    font-weight: 700;
+    text-align: center;
+    width: 50%;
+    margin: 0px auto 20px auto;
+}
+.h2-marcação {
+    color: var(--corFonteBranco);
 }
 
 h3 {
@@ -80,7 +120,10 @@ h3 {
     line-height: 2rem;
     color: var(--corFontePreto);
 }
-
+.h3-categoria {
+    opacity: 0.8;
+    text-decoration: underline 1px;
+}
 h4 {
     font-size: 20px;
     margin-bottom: 12px;
@@ -92,8 +135,15 @@ p, a {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
-    color: var(--corFontePreto);
-    line-height: 1.2rem;
+}
+
+hr {
+    width: 70%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: var(--corFontePreto);
+    opacity: 0.2;
+    border-radius: 20px;
 }
 
 
@@ -104,10 +154,11 @@ button, .a-button {
     font-weight: 600;
     width: 220px;
     background-color: transparent;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     transition: 400ms;
     margin: 10px 20px;
     cursor: pointer;
+    color: var(--corBgPreto);
 }button:hover, .a-button:hover {
     background-color: var(--corPrincipal);
     color: var(--corFonteBranco);
@@ -116,7 +167,7 @@ button, .a-button {
     color: var(--corFonteBranco);
     padding: 20px 20px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     width: 220px;
     background-color: var(--corPrincipal);

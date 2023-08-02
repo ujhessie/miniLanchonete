@@ -1,4 +1,4 @@
-@media (max-width: 650px) {
+@media (max-width: 720px) {
 
 /* === CARRINHO === */
 #btn-carrinho {
@@ -17,8 +17,17 @@
 
 
 /*  === HEADER === */
+header {
+    padding: 0 20px;
+}
+header .div-content-sec {
+    height: 60px;
+}
 header .a-button, header .a-button2 {
     display: none;
+}
+.logo-header {
+    width: 70px;
 }
 /*  === HEADER === */
 
@@ -28,7 +37,20 @@ header .a-button, header .a-button2 {
 
 /* === GLOBAL === */
 h1 {
-    font-size: 42px;
+    font-size: 32px;
+    line-height: 2.5rem;
+}
+h2 {
+    font-size: 18px;
+}
+.h2-destaque {
+    width: 100%;
+}
+.h3-categoria {
+    font-size: 18px;
+}
+p,a {
+    font-size: 14px;
 }
 main {
     margin: 0 auto;
@@ -42,17 +64,32 @@ button {
     display: block;
     margin: 20px auto;
 }
+.div-banner {
+    aspect-ratio: 16/9;
+}
 /* === GLOBAL === */
 
 
 
 
 /* === SEC_INICIO === */
-.cr-inicio, .text2-inicio, .bem-vindo, #h1-header  {
+#inicio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#imgParalax {
+    left: 30%;
+}
+#imgParalaxFolhas {
+    width: 60rem;
+}
+.cr-inicio, .text2-inicio, .bem-vindo, h1  {
     text-align: center;
+    z-index: 100;
 }
 .bem-vindo {
     margin: 0 auto;
+    font-size: 16px;
 }
 #div-btns-inicio {
     flex-direction: column;
@@ -66,7 +103,23 @@ button {
 
 
 /* === SEC_PRODUTOS === */
+.item-nav-categorias p {
+    font-size: 16px;
+}
+.icon-item-categoria {
+    width: 30px;
+}
 
+
+.div-produtos {
+    grid-template-columns: repeat(2, 1fr);
+}
+.nome-produto {
+    font-size: 18px;
+}
+.valor-produto {
+    font-size: 12px;
+}
 /* === SEC_PRODUTOS === */
 
 
@@ -74,12 +127,19 @@ button {
 
 
 
+/* === FOOTER === */
+footer  .div-content-sec {
+    grid-template-columns: repeat(1, 1fr);
+}
+.div-footer h2 {
+    font-size: 20px;
+}
+.ul-redes-sociais-footer a {
+    font-size: 30px;
+}
+/* === FOOTER === */
 
-.btns-captura {
-    flex-direction: column;
-}
-.btns-captura .a-button {
-    width: 100%;
-}
+
+
 
 }

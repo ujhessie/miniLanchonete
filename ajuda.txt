@@ -1,0 +1,47 @@
+# Banners: 
+    -> Criar banners em duas proporções: "234/60" e "16/9"
+
+# Background Inicio:
+    ->
+#fontes
+    -> icons em fontes: https://www.dafont.com/pt/social-shapes.font
+
+
+
+
+# Elementos não usados
+
+    Valores
+    {
+        <ul class="ul-valores-e-competencias">
+
+                        <!-- Item 1 -->
+                        <li>
+                            <p class="p-valores-e-competencias">+</p>
+                            <p class="p2-valores-e-competencias">Qualidade</p>
+                        </li>
+                        <!-- Item 1 -->
+
+                        <!-- Item 2 -->
+                        <li>
+                            <p class="p-valores-e-competencias">-</p>
+                            <p class="p2-valores-e-competencias">Preço</p>
+                        </li>
+                        <!-- Item 2 -->
+
+                        <!-- Item 3 -->
+                        <li>
+                            <p class="p-valores-e-competencias">+</p>
+                            <p class="p2-valores-e-competencias">Satisfação</p>
+                        </li>
+                        <!-- Item 3 -->
+
+                        <!-- Item 4 -->
+                        <li>
+                            <p class="p-valores-e-competencias">-</p>
+                            <p class="p2-valores-e-competencias">Preço</p>
+                        </li>
+                        <!-- Item 4 -->
+
+                    </ul>
+    }
