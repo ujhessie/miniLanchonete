@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
       // Atualizar o link do WhatsApp com a mensagem do carrinho
       const linkWhatsApp = document.getElementById("link-whatsapp");
-      const numeroTelefone = "98985133216"; // Substitua pelo seu número de telefone
+      const numeroTelefone = "98988740103"; // Substitua pelo seu número de telefone
       const mensagemCodificada = encodeURIComponent(mensagem);
       linkWhatsApp.href = `https://api.whatsapp.com/send?phone=${numeroTelefone}&text=${mensagemCodificada}`;
     }

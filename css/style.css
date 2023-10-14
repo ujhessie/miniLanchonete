@@ -47,7 +47,7 @@ header .div-content-sec {
     justify-content: center;align-items: center;
 }
 .logo-header {
-    width: 90px;
+    width: 140px;
 }
 .nav-header {
     display: flex;
@@ -222,7 +222,7 @@ header .a-button, header .a-button2 {
 
 #inicio {
     background-color: var(--corBgPreto);
-    background-image: url("../img/color-bg.png");
+    background-image: url("../img/background-inicio.png");
     /* background-image: linear-gradient(90deg, #0D1216, #7e7e7e); */
     background-position: center center;
     background-size: cover;
@@ -237,6 +237,16 @@ header .a-button, header .a-button2 {
     /* box-shadow: inset 50vw 0px 400px #00000075; */
 }
 
+.fade {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.4;
+}
+
 #inicio * {
     z-index: 100;
 }
@@ -244,8 +254,8 @@ header .a-button, header .a-button2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 55%;
-    width: 40rem;
+    left: 50%;
+    width: 30rem;
     transition: 400ms;
 }
 #imgParalaxFolhas {
